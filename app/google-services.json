@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "905882695067",
+    "project_id": "proyecto-di-ee20c",
+    "storage_bucket": "proyecto-di-ee20c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905882695067:android:88601eeb2234df58195d3e",
+        "android_client_info": {
+          "package_name": "com.example.proyectodi2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9PCdHo0uHs9u4HedzMREmIEVKpbXkaEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
