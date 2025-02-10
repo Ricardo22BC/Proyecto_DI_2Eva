@@ -46,6 +46,10 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Favo
     public void onBindViewHolder(@NonNull FavoriteViewHolder holder, int position) {
         Animals animal = favoritesList.get(position);
         holder.binding.setAnimals(animal);
+
+        // Añadir contentDescription
+        holder.binding.imageView.setContentDescription("Imagen de " + animal.getTitle());
+
         Glide.with(holder.itemView.getContext())
                 .load(animal.getImageUrl())
                 .into(holder.binding.imageView);

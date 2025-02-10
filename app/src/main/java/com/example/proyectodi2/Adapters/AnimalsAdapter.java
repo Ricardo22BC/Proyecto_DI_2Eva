@@ -52,6 +52,8 @@ public class AnimalsAdapter extends RecyclerView.Adapter<AnimalsAdapter.AnimalVi
     public void onBindViewHolder(@NonNull AnimalViewHolder holder, int position) {
         Animals animal = animalsList.get(position);
         holder.binding.setAnimals(animal);
+        // Añadir contentDescription
+        holder.binding.imageView.setContentDescription("Imagen de " + animal.getTitle());
         // Cargar imagen usando Glide
         Glide.with(holder.itemView.getContext())
                 .load(animal.getImageUrl())
