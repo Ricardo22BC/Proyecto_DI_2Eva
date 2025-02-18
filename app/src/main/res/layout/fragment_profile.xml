@@ -1,0 +1,44 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <!-- ViewModel o variables de Data Binding, si aplicas -->
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="?colorPrimary"
+        android:padding="16dp">
+
+        <!-- Campos para cambio de contraseña -->
+        <EditText
+            android:id="@+id/currentPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña actual"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/newPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nueva contraseña"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/changePasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?colorOnPrimary"
+            android:textColor="?colorPrimary"
+            android:text="Cambiar contraseña"/>
+
+        <!-- Switch para modo claro/oscuro -->
+        <Switch
+            android:id="@+id/darkModeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modo oscuro"/>
+
+    </LinearLayout>
+</layout>

@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide;
 import com.example.proyectodi2.R;
 import com.example.proyectodi2.databinding.ItemLayoutBinding;
 import com.example.proyectodi2.models.Animals;
-import com.example.proyectodi2.views.DashboardActivity;
+import com.example.proyectodi2.views.DashboardFragment;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
             loginViewModel.loginUser(email, password, new UserRepository.OnAuthCompleteListener() {
                 @Override
                 public void onSuccess(FirebaseUser user) {
-                    startActivity(new Intent(LoginActivity.this,DashboardActivity.class));
+                    startActivity(new Intent(LoginActivity.this,MainActivity.class));
                     finish();
                 }
 
@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, status, Toast.LENGTH_SHORT).show();
 
                 if (status.equals("Inicio de sesión  con exito.")) {
-                    Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                     finish();
